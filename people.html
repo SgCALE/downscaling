@@ -30,12 +30,19 @@
     <div class="img-comp-img">
         <img id="left"
              src="https://raw.githubusercontent.com/SgCALE/SgCALE.github.io/main/data/figures/pre_include_oce.d00gcm.2083.png"
-             width="200" >
+             height="800px" >
     </div>
     <div class="img-comp-img img-comp-overlay">
         <img id="right"
              src="https://raw.githubusercontent.com/SgCALE/SgCALE.github.io/main/data/figures/pre_include_oce.d01.2083.png"
-             width="200" >
+             height="800px" >
+    </div>
+    <!-- id's are not needed but wrapping all the buttons in a common ancestor will help -->
+    <div class="buttonContainer">
+          <input class="button" type="button" value="Great Southeast Asia">
+          <input class="button" type="button" value="Southeast Asia">
+          <input class="button" type="button" value="Around Singapore">
+          <input class="button" type="button" value="Singapore">
     </div>
 </div>
 
@@ -45,13 +52,6 @@
 initComparisons();
 
 </script>
-<!-- id's are not needed but wrapping all the buttons in a common ancestor will help -->
-<div class="buttonContainer">
-      <input type="button" value="Great Southeast Asia">
-      <input type="button" value="Southeast Asia">
-      <input type="button" value="Around Singapore">
-      <input type="button" value="Singapore">
-</div>
 <script>
 // Instead of setting up 4 separate event handlers that all point to the
 // same callback function, we can use event delegation where we handle the
