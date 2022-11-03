@@ -57,13 +57,13 @@
   overflow:hidden;
   justify-content: center;
 }
-.img-comp-img img {
+.img-comp-img img{
   display:block;
   vertical-align:middle;
 }
 
 .img-comp-slider {
-  position: relative;
+  position: absolute;
   z-index:9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
