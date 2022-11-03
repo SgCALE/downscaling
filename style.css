@@ -2,7 +2,52 @@
 
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  height: 1000px; /*should be the same height as the images*/
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+.buttonContainer {
+  position: relative;
+  height: 50px; /*should be the same height as the images*/
+  justify-content: center;
+  margin: auto;
+  padding-top: 800px;
+}
+.button {
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
 }
 
 .img-comp-img {
@@ -10,8 +55,8 @@
   width: auto;
   height: auto;
   overflow:hidden;
+  justify-content: center;
 }
-
 .img-comp-img img {
   display:block;
   vertical-align:middle;
