@@ -63,7 +63,7 @@
 }
 
 .img-comp-slider {
-  position: absolute;
+  position: relative;
   z-index:9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
@@ -88,6 +88,7 @@ body {
 #navbar {
   overflow: hidden;
   background-color: #333;
+  z-index:100;
 }
 
 #navbar a {
