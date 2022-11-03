@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./slider.js"></script>
 
+<script src="./slider.js"></script>
 <link rel="stylesheet" href="./style.css">
+  
 </head>
 <body>
 
@@ -14,18 +15,22 @@
 
 <div id="navbar">
   <a href="./home.html">Home</a>
-  <a class="active" href="./people.html">People</a>
+  <a href="./people.html">People</a>
   <a href="./publication.html">Publication</a>
-  <a href="./about.html">About</a>
+  <a class="active" href="./about.html">About</a>
   <a href="./contact.html">Contact</a>
 </div>
-<h1 style="font-size:200%; padding-left:25%; padding-right:25%;">Coming soon</h1>
+
+<div
+  <h1 style="font-size:200%; padding-left:25%; padding-right:25%;">Coming soon</h1>
+</div>
 
 <script>
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
