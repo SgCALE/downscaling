@@ -13,7 +13,7 @@
   height: 50px; /*should be the same height as the images*/
   justify-content: center;
   margin: auto;
-  padding-top: 800px;
+  top: 800px;
 }
 .button {
   position: relative;
