@@ -85,14 +85,14 @@
 
 
 // Store all the images in an array
-var left_backgrounds = [
+var prepleft_backgrounds = [
 "./images/pre_include_oce.d01.2083.png",
 "./images/presea.d02.2083.png",
 "./images/pre.malai.d03.2083.png",
 "./images/pre.sg.d04.2083.png"
 
 ];
-var right_backgrounds = [
+var prerpright_backgrounds = [
 "./images/pre_include_oce.d00gcm.2083.png",
 "./images/presea.d01.2083.png",
 "./images/pre.malai.d02.2083.png",
@@ -154,8 +154,8 @@ var buttons = prep_button.querySelectorAll("input");
 var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
 
 // Set the background to the right image from the array
-   left_prep.src = left_backgrounds[index]
-   right_prep.src = right_backgrounds[index]
+   left_prep.src = prepleft_backgrounds[index]
+   right_prep.src = prepright_backgrounds[index]
 }
 
 </script>
