@@ -51,11 +51,11 @@
     </div>
 </div>
 
-<script>
+<!-- <script>
 /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
 initComparisons();
 
-</script>
+</script> -->
 <script>
 // Instead of setting up 4 separate event handlers that all point to the
 // same callback function, we can use event delegation where we handle the
@@ -104,6 +104,7 @@ var index = (Array.prototype.slice.call(buttons)).indexOf(event.target);
 
 </script>
 <script>
+window.onload = function() {initComparisons()};
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
